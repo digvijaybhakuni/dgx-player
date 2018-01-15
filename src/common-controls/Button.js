@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/css/button.css';
+import './Button.sass';
 
 export const DgButton = (props) => 
     <button className="dg-button" onClick={props.click}>
@@ -24,7 +24,7 @@ export class TheButton extends Component {
 
     render() {
         return (
-            <button onClick={this.buttonClick.bind(this)}>
+            <button className="the-button" onClick={this.buttonClick.bind(this)}>
                 {this.props.children} {this.props.text} Click Count {this.state.counter}
             </button>
         )
