@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import './List.sass'
+import { TogglePanel } from './HOC';
 
-export const DgList = porps => 
+const StatelessList = porps => 
 <ul className='dg-list'>
     {porps.list && 
         porps.list.map((msg, index)=> <li key={index}>{msg}</li>)
     }
 </ul>
+export const DgList = TogglePanel("DG List")(StatelessList);
+
 
 
 export class TheList extends Component {

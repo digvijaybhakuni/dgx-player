@@ -5,6 +5,7 @@ import { DgButton, TheButton } from './common-controls/Button';
 import './styles/sass/core.sass';
 import './App.css';
 import { DgList, TheList } from './common-controls/List';
+import { toggleable } from './common-controls/HOC';
 
 
 class App extends Component {
@@ -52,7 +53,7 @@ class App extends Component {
   }
 }
 
-const MyText = (props) =>  <span><input type="text" onKeyUp={props.keyup}/></span>
+const MyText = toggleable((props) =>  <span><input type="text" onKeyUp={props.keyup}/></span> );
 
 const alertFn = (text) => () => printFn(text, "test");
 const printFn = (...args) => console.log(args);
