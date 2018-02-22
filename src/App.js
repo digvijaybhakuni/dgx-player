@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { DgButton, TheButton } from './common-controls/Button';
+import {Chat} from './component/Chat';
 
 import './styles/sass/core.sass';
 import './App.css';
@@ -47,6 +48,9 @@ class App extends Component {
         <div>
           <DgList list={list} ></DgList>
           <TheList title="Test Title"></TheList>
+        </div>
+        <div>
+          <Chat/>
         </div>
       </div>
     );
