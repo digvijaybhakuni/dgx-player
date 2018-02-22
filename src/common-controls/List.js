@@ -12,6 +12,7 @@ export const DgList = TogglePanel("DG List")(StatelessList);
 
 
 
+@TogglePanel('This Is Decorated')
 export class TheList extends Component {
 
     constructor(){

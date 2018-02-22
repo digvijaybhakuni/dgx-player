@@ -5,6 +5,16 @@
 
 https://github.com/facebook/create-react-app/issues/167
 
+> Added babel plugin to transform decorators for legacy source.
+>
+> `yarn add -D babel-plugin-transform-decorators-legacy`.
+>
+> Open `config\webpack.config.dev.js`  and find for `babel-loader`.
+>
+> Add `plugins:['transform-decorators-legacy']` inside **options** object.
+>
+> Do same for the `webpack.config.prod.js` file too. 
+
 ## How to setup developement environment
 
 https://www.ibm.com/blogs/bluemix/2017/06/react-web-express-api-development-production/
